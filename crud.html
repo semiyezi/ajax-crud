@@ -21,6 +21,7 @@
         <h2 id="0">FORMULAIRE</h2>
         <div class="ui container">
         <form   class="ui form"  autocomplete="off" id="formulaire">
+          <input type="text" id="_id" hidden>
             <div class="field">
               <label>Nom</label>
               <input type="text" id="nom" name="nom" placeholder="nom">
@@ -73,6 +74,7 @@
                 <th>telephone</th>
                 <th>Statutmarital</th>
                 <th>Pays</th>
+                <th hidden>ID</th>
                 <th>#</th>
               </tr>
             </thead>
@@ -80,6 +82,7 @@
             </tbody>
           </table>
         </div>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
         <script src="crud.js"></script>
 </body>
 </html>
