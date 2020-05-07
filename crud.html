@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"/>
+    <link rel="stylesheet" href="crud.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+    
+        <nav class="section">
+          <h1>BIENVENUE CHEZ MAPENDO</h1> 
+        <ul>
+          <li><a href="#0">FORMULAIRE</a></li>
+          <li><a href="#1">LISTE EMPLOYES</a></li>
+        </ul>
+        </nav>
+      </header>
+        <h2 id="0">FORMULAIRE</h2>
+        <div class="ui container">
+        <form   class="ui form"  autocomplete="off" id="formulaire">
+            <div class="field">
+              <label>Nom</label>
+              <input type="text" id="nom" name="nom" placeholder="nom">
+              <span  id="erreurnom"></span>
+            </div>
+            <div class="field">
+              <label>Prenom</label>
+              <input type="text" id="prenom" name="prenom" placeholder="prenom">
+              <span  id="erreurprenom"></span>
+            </div>
+            <div class="field">
+                <label>Email</label>
+                <input type="mail" id="email" name="email" placeholder="email">
+                <span  id="erreurmail"></span>
+            </div>
+              <div class="field">
+                <label>Poste</label>
+                <input type="text" id="poste" name="poste" placeholder="poste">
+                <span id="erreurposte"></span>
+              </div>
+              <div class="field">
+                <label>Telephone</label>
+                <input type="tel" id="telephone" name="telephone" placeholder="telephone">
+                <span   id="erreurtelephone"></span>
+              </div>
+              <div class="field">
+                <label>Statut-marital</label>
+                <input type="text" id="statutmarital" name="statut" placeholder="Statut-marital">
+                <span   id="erreurstatut"></span>
+              </div>
+              <div class="field">
+                <label>Pays d'origine</label>
+                <input type="text" id="paysorigine" name="pays" placeholder="Pays">
+                <span  id="erreurpays"></span>
+              </div>
+              <div class="form-action-buttons">
+             <input type="submit" value="submit" id="submit">
+             </div>
+          </form>
+          <h2 id="1">LISTE EMPLOYES</h2>
+          <table class="ui celled table" id="employeslist">
+            <thead>
+              <tr>
+                <th>nom</th>
+                <th>prenom</th>
+                <th>email</th>
+                <th>poste</th>
+                <th>telephone</th>
+                <th>Statutmarital</th>
+                <th>Pays</th>
+              </tr>
+            </thead>
+            <tbody>
+            </tbody>
+          </table>
+        </div>
+        <script src="crud.js"></script>
+</body>
+</html>
